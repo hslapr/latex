@@ -1,0 +1,39 @@
+\documentclass{jsarticle}
+\usepackage{booktabs}
+\usepackage{array}
+\begin{document}
+
+\begin{center}
+	\begin{tabular}{lrr} \toprule
+		品名   & 単価（円） & 個数 \\ \midrule
+		りんご & 100        & 5    \\
+		みかん & 50         & 10 \\ \bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{|l|r|r|} \hline
+		品名   & 単価（円） & 個数 \\ \hline
+		りんご & 100        & 5    \\ \cline{1-1}
+		みかん & 50         & 10 \\ \hline
+	\end{tabular}
+\end{center}
+
+魔法陣（表\ref{mahou}）
+\begin{table}
+	\caption[3次の魔法陣]{3次の魔法陣の例。
+	縦・横・斜めの和がいずれも15である。}
+	\label{mahou}
+	\begin{center}
+		\setlength{\tabcolsep}{3pt}
+		\footnotesize
+		\begin{tabular}{|c|c|c|} \hline
+			2 & 9 & 4 \\ \hline
+			7 & 5 & 3 \\ \hline
+			6 & 1 & 8 \\ \hline
+		\end{tabular}
+	\end{center}
+\end{table}%
+では縦・横・斜めの和が等しい。
+
+\end{document}
